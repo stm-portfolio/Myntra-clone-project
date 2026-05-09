@@ -1,0 +1,249 @@
+/* Global CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:
+    Figtree-Regular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* NavBar Section Start */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 0px 3%;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F6F6F6;
+    z-index: 10;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+.logo-image {
+    width: 7%;
+}
+
+.logo img {
+    width: 55px;
+    display: flex;
+    vertical-align: center;
+}
+
+nav {
+    width: 45%;
+    min-width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+nav a {
+    text-align: center;
+    padding: 28px 17px 28px;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+nav a:hover {
+    color: red;
+    border-bottom: 4px solid red;
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+nav a:last-of-type sup {
+    font-size: 12px;
+    padding-left: 3px;
+    color: red;
+}
+
+.search-bar {
+    width: 30%;
+    min-width: 400px;
+    display: flex;
+    margin: 0 0 0 100px;
+}
+
+.search-icon i {
+    box-sizing: content-box;
+    color: #696e79;
+    background-color: #f5f5f6;
+    padding: 13px 5px 14px;
+    border: 1px solid #f5f5f6;
+    border-radius: 4px 0 0 4px;
+}
+
+#search-input {
+    display: inline-block;
+    width: 400px;
+    font-size: 20px;
+    padding: 8px 10px 10px;
+    border: 1px solid #f5f5f6;
+    border-radius: 0 4px 4px 0;
+    background-color: #f5f5f6;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border: 2px solid red;
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+    transition: 0.3s ease;
+}
+
+.icon-bar {
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.icon-bar div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+}
+
+.icon-container i {
+    font-size: 24px;
+    color: #323436;
+}
+
+.icon-container .icon-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon-container i:hover, .icon-name:hover {
+    color: red;
+}
+
+/* Navbar section end  */
+
+/* banner section start  */
+
+.banner-container img {
+    width: 100vw;
+}
+/* banner section ended */
+
+/* Category section started */
+.categories {
+    margin: 80px 50px;
+}
+
+.ctgry-title {
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #282c3f;
+    padding-bottom: 20px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.category-container a img {
+    max-width: 300px;
+    box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.123);
+
+}
+
+.category-container a img:hover {
+    transform: scale(1.08);
+    transition: 0.3s ease;
+}
+
+/* category section ended */
+
+/* Footer section start  */
+footer {
+    background-color: #FAFBFC;
+    padding-top: 5px;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #696e79;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.footer-container a:hover {
+    color: red;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-image a img {
+    width: 200px;
+    margin-right: 5px;
+}
+
+#apple {
+    width: 178px;
+}
+
+.footer-image a img:hover {
+    box-shadow: 0 0 5px rgb(0, 197, 105);
+    border-radius: 8px;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+
+.copyright p {
+    font-size: 18px;
+    color: #696e79;
+}
+
+.copyright p a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
